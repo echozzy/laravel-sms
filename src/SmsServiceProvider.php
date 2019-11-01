@@ -7,7 +7,6 @@
 
 namespace  Zzy\LaravelSms;
 
-use EasySms;
 use Illuminate\Support\ServiceProvider;
 
 class SmsServiceProvider extends ServiceProvider
@@ -35,6 +34,6 @@ class SmsServiceProvider extends ServiceProvider
         $this->app->singleton(EasySms::class, function ($app) {
             return new EasySms($app->config('sms'));
         });
-        $this->app->alias(EasySms, 'easysms');
+        $this->app->alias(EasySms::class, 'easysms');
     }
 }
