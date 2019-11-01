@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Zzy\\LaravelSms\\LaravelServiceProvider"
+                "\\Zzy\\LaravelSms\\SmsServiceProvider"
             ]
         }
     },
