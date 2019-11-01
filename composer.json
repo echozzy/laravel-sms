@@ -1,0 +1,39 @@
+{
+    "name": "Zzy/laravel-sms",
+    "description": "The easiest way to send short message.",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "php": ">=5.6",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7 || ^7.5",
+        "mockery/mockery": "1.2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zzy\\LaravelSms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zzy\\LaravelSms\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Zzy\\LaravelSms\\LaravelServiceProvider"
+            ],
+            "aliases": {
+                "ZyModule": "\\Zzy\\LaravelSms\\Factory"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "echozzy",
+        "email": "348858954@qq.com"
+    }]
+}
