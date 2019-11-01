@@ -31,7 +31,7 @@ class SmsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('EasySms', function ($app) {
+        $this->app->singleton(EasySms::class, function ($app) {
             return new EasySms($app->config('sms'));
         });
         $this->app->alias(EasySms, 'easysms');
