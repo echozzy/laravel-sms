@@ -9,7 +9,17 @@ php artisan vendor:publish --provider='Zzy\LaravelSms\SmsServiceProvider'
 config/sms.php
 
 ## 使用
-
+```php
+$sms = app('easysms');
+$sms->send(17396908413, [
+    'content'  => '您的验证码为: 6379',
+    'template' => 'SMS_176910465',
+    'data' => [
+        'code' => 6379
+    ],
+]);
+```
+或者
 ```php
 use Zzy\LaravelSms\EasySms;
 
