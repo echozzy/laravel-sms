@@ -7,6 +7,7 @@
 
 namespace  Zzy\LaravelSms;
 
+use EasySms;
 use Illuminate\Support\ServiceProvider;
 
 class SmsServiceProvider extends ServiceProvider
