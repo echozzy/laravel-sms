@@ -1,5 +1,5 @@
 {
-    "name": "Zzy/laravel-sms",
+    "name": "echozzy/laravel-sms",
     "description": "The easiest way to send short message.",
     "type": "library",
     "require": {
