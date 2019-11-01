@@ -25,10 +25,7 @@
         "laravel": {
             "providers": [
                 "\\Zzy\\LaravelSms\\LaravelServiceProvider"
-            ],
-            "aliases": {
-                "ZyModule": "\\Zzy\\LaravelSms\\Factory"
-            }
+            ]
         }
     },
     "license": "MIT",
